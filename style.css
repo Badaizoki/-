@@ -235,6 +235,10 @@ body{
   padding-top: 50px;
 }
 
+.main-header-contacts{
+  display: flex;
+}
+
 .advantage{
   width: auto;
   margin-bottom: 50px;
@@ -254,25 +258,32 @@ body{
   width: 280px;
 }
 
-.about_us{
-  width: 650px;
-  padding-left: 80px;
-}
-
-.news{
-  width:250px;
-}
-
-.projects{
-  width: 650px;
-  padding-left: 80px;
-  order: 1;
-}
-
 .all{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.news{
+  width: 270px;
+  align-self: stretch;
+}
+
+.about_us{
+  display: flex;
+  width: 650px;
+  padding-left: 80px;
+}
+
+.h2_em{
+  padding-left: 20px;
+  align-items: center;
+}
+
+.projects{
+   width: 650px;
+  padding-left: 80px;
+  order: 1;
 }
 
 .projects-list{
