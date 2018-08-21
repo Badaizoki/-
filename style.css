@@ -98,6 +98,8 @@ em{
   border-style: solid;
   border-radius: 100px;
   margin-top: 30px;
+  width: 158px;
+  height: 158px;
 }
 
 .projects-button{
@@ -107,7 +109,7 @@ background-color: #344a59;
 font-size: 16px;
 border: 1px solid #344a59;
 border-radius: 20px;
-padding: 15px;
+padding: 5px;
 }
 
 .projects-item-a{
@@ -148,9 +150,7 @@ font-weight: bold;
   font-weight: bold;
   border: 1px solid #344a59;
   border-radius: 20px;
-  padding: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 5px 60px;
 }
 
 .servisec{
@@ -453,7 +453,7 @@ input[type="radio"].visually-hidden {
 .button-news{
   position: absolute;
   bottom: 1px;
-  right: 40px;
+  left: 30px;
 }
 
 .projects{
@@ -462,8 +462,8 @@ input[type="radio"].visually-hidden {
 
 .projects-button{
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 30px;
+  right: 50px;
 }
 
 .main-footer{
