@@ -9,6 +9,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  background: #000000;
 }
 
 a {
@@ -20,15 +21,17 @@ a {
 .main-footer{
   margin:0 auto;
   width: 1098px;
+  background: #fff;
 }
 
 .site{
   width: 1098px;
   height: auto;
+  background-color: #ffffff;
 }
 
 .main-navigation {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   line-height: 20px;
 
@@ -49,18 +52,18 @@ color: #e8544c;
 text-decoration: underline;
 }
 
-.site-navigation a {
+.site-navigation a{
   color: #424345;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus{
-  background-color: #344c5b;
-  color: #ffffff;
+text-decoration: underline;
 }
 
 .site-navigation-contacts {
   color: #e8544c;
+}
+
+.site-navigation li a.current{
+  background-color: #344c5b;
+  color: #ffffff;
 }
 
 .main-header-contacts{
@@ -114,19 +117,16 @@ padding: 5px;
 
 .projects-item-a{
   font-size: 12px;
-  color: #000000;
-  text-align: center;
+  color: #fff;
 }
 
 .projects-item h3{
+  width: 330px;
+  height: 160px;
   font-size: 12px;
   font-weight: bold;
-  background-image: url("img/1.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  width: 310px;
-  height: 132px;
-
+  color: #fff;
+  margin:22px 0 auto;
 }
 
 .news time{
@@ -155,6 +155,7 @@ font-weight: bold;
 
 .servisec{
   background-image: url("img/services.jpg");
+  background-color: #ffffff;
 }
 
 .servisec h2{
@@ -223,15 +224,10 @@ a:focus{
   padding: 0;
 }
 
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .main-navigation-wrapper {
   min-width: 1098px;
-  margin-bottom: 2px;
+  padding-bottom: 2px;
+  background: #fff;
 }
 
 .container {
@@ -239,7 +235,6 @@ a:focus{
   margin: 0 auto;
   padding: 0 10px;
   vertical-align: middle;
-
 }
 
 .main-navigation-wrapper .container {
@@ -249,12 +244,24 @@ a:focus{
 
 .logo_contacts{
   display: flex;
-  padding-left: 70px;
-  padding-top: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .main-header-contacts{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 500px;
+
+}
+
+.phone{
+  min-width: 100px;
+  line-height: 25px;
 }
 
 .advantage{
@@ -289,21 +296,20 @@ a:focus{
 }
 
 .about_us{
-  padding-left: 80px;
+  padding-left: 60px;
   display: flex;
   width: 700px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .h2_em{
   padding-left: 30px;
-  padding-right: 20px;
-  align-items: center;
+  padding-right: 25px;
 }
 
 .projects{
   width: 700px;
-  padding-left: 80px;
+  padding-left: 60px;
   order: 1;
   padding-top: 10px;
 }
@@ -318,8 +324,12 @@ list-style: none;
 }
 
 .projects-item{
-  width: 310px;
   margin-right: 20px;
+  background-image: url("img/projects.jpg");
+  background-repeat: no-repeat;
+  width: 330px;
+  height: 160px;
+  margin-bottom: 20px;
 }
 
 .projects-item:nth-child(2n) {
@@ -328,7 +338,6 @@ list-style: none;
 
 .servisec{
   width: auto;
-  margin-bottom: 50px;
 }
 
 .servisec_h2{
@@ -343,7 +352,7 @@ list-style: none;
 
 .main-footer{
   padding: 80px 0;
-  margin-top: 70px;
+  background-color: #ffffff;
 }
 
 .footer-container{
@@ -380,8 +389,10 @@ img {
 .site-navigation a,
 .site-navigation-contacts{
   display: block;
-  padding: 15px 10px;
+  padding: 5px 10px;
   vertical-align: middle;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .site-navigation-contacts{
   padding-left: 50px;
@@ -409,15 +420,15 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.site-navigation-contacts::before{
+.site-navigation-contacts::after{
   content: "";
 
   position: absolute;
   left: 10px;
-  bottom: 5px;
+  bottom: -5px;
 
-  width: 27px;
-  height: 37px;
+  width: 38px;
+  height: 38px;
 
   background-image: url("img/icon.png");
   background-repeat: no-repeat;
@@ -436,7 +447,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   left: 1px;
-  top: 1px;
+  top: 6px;
 
   width: 10px;
   height: 70%;
@@ -468,4 +479,54 @@ input[type="radio"].visually-hidden {
 
 .main-footer{
   width: 1098px;
+}
+
+.phone-contacts{
+  position: relative;
+  padding-right: 40px;
+  padding-left: 100px;
+}
+
+.phone::after{
+content: "";
+
+position: absolute;
+left: 50px;
+bottom: 3px;
+
+width: 45px;
+height: 45px;
+
+background: #344a59;
+border-radius: 50%;
+
+background-image: url("img/phone.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.mail{
+  padding-left: 100px;
+}
+
+.mail::after{
+content: "";
+
+position: absolute;
+left: 50px;
+bottom: 3px;
+
+width: 45px;
+height: 45px;
+
+background: #344a59;
+border-radius: 50%;
+
+background-image: url("img/mail.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.main-header-contacts{
+  position: relative;
 }
