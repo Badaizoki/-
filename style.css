@@ -9,7 +9,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-  background: #000000;
+  background: #5e6f81;
 }
 
 a {
@@ -120,6 +120,7 @@ padding: 5px;
 color: #e8544c;
 font-size: 14PX;
 font-weight: bold;
+font-family:Bebas Neue;
 }
 
 .news-item a{
@@ -138,6 +139,7 @@ font-weight: bold;
   border: 1px solid #344a59;
   border-radius: 20px;
   padding: 5px 60px;
+  margin-bottom: 10px;
 }
 
 .servisec{
@@ -258,7 +260,7 @@ a:focus{
 
 .advantage{
   width: auto;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .advantage_txt{
@@ -538,4 +540,185 @@ background-position: center;
 
 .main-header-contacts{
   position: relative;
+}
+.servisec_h2{
+  margin-top: 0px;
+}
+.servisec-list-li{
+  position: relative;
+  padding-left: 15px;
+}
+
+.servisec-list-li::after{
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 12px;
+
+  width: 8px;
+  height: 1px;
+
+  background-color: #ffffff;
+}
+
+.servisec-list-li{
+  color: #ffffff;
+}
+
+.newspage{
+  width: auto;
+  padding-left: 80px;
+  background-image: url("img/services-back.jpg");
+}
+
+.newspage-list{
+  padding-left: 35px;
+}
+
+.newspage-list a{
+  font-size: 14px;
+  color: #ffffff;
+ }
+
+.newspage-h2{
+  margin-top:2px;
+  padding-top: 30px;
+}
+
+.advantage-all{
+  margin-bottom: 3px;
+}
+
+.servisec-all{
+  background-image: url("img/services-back.jpg");
+}
+
+.newspage-item{
+  position: relative;
+}
+
+.newspage-item::after{
+content:"";
+position: absolute;
+
+left: -40px;
+top: -5px;
+
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #ffffff;
+border: 6px solid #784336;
+
+background-image: url("img/news.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.projectspage{
+  margin-top: 2px;
+  width: auto;
+  padding-left: 80px;
+  background-image: url("img/services-back.jpg");
+  padding-bottom: 40px;
+}
+
+.projectspage h2{
+  font-size: 30px;
+}
+
+.projectsall{
+  padding-left: 35px;
+  display: block;
+}
+
+.projects-item-all{
+background-image: none;
+}
+
+.projects-item-all{
+  display: block;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.projects-item-all::after{
+content:"";
+position: absolute;
+
+left: -40px;
+top: -5px;
+
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: #ffffff;
+border: 6px solid #784336;
+
+background-image: url("img/projects.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.projectsall time{
+color: #e8544c;
+font-size: 14PX;
+}
+
+.projects-item-all{
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: none;
+}
+
+.projects-item-all a{
+  text-decoration: underline;
+  font-size: 14px;
+  }
+
+h2{
+  font-family:Bebas neue;
+  font-weight: bold;
+}
+
+.contacts-all{
+  text-align: center;
+  margin-top: 2px;
+  width: auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-image: url("img/services-back.jpg");
+  margin-bottom: 2px;
+}
+
+.contacts-all-h2{
+  font-size: 24px;
+  font-weight: bold;
+  color: #e8544c;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contacts-all p{
+  font-size: 16px;
+  color: #ffffff;
+}
+.location-all{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mail-all, .phone-all, .email-all{
+  position: relative;
+}
+
+.mail-all::after{
+  content: "";
+  position: absolute;
+
+  left: 10px;
+  width: 10px;
+  height: 3px;
+  background-color: red;
 }
