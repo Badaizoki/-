@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('fonts/bebasneue_bold-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   min-width: 1098px;
   min-height: 1744;
@@ -88,7 +97,7 @@ text-decoration: underline;
 .projects h2,
 .news h2{
   font-size: 30px;
-  color: #e8544c;
+  color: #d25b38;
 }
 
 em{
@@ -109,11 +118,13 @@ em{
 .projects-button{
 color: #ffffff;
 text-decoration: underline;
-background-color: #344a59;
+background-color: #d25b38;
 font-size: 16px;
-border: 1px solid #344a59;
+border: 1px solid #d25b38;
 border-radius: 20px;
 padding: 5px;
+padding-left: 30px;
+padding-right: 30px;
 }
 
 .news time{
@@ -150,7 +161,7 @@ font-family:Bebas Neue;
 .servisec h2{
   font-size: 24px;
   font-weight: bold;
-  color: #e8544c;
+  color: #d25b38;
 }
 
 .servisec-list a{
@@ -289,56 +300,94 @@ a:focus{
 }
 
 .about_us{
+  padding-top: 50px;
   padding-left: 60px;
   display: flex;
-  width: 700px;
-  margin-bottom: 20px;
+  width: 300px;
 }
 
 .h2_em{
-  padding-left: 30px;
-  padding-right: 25px;
+  width: 280px;
 }
 
 .projects{
   width: 700px;
-  padding-left: 60px;
-  order: 1;
-  padding-top: 10px;
+  height: 500px;
 }
 
 .projects-list{
-display: flex;
-flex-wrap: wrap;
-padding: 0;
-margin: 0;
+  list-style: none;
+  padding:0;
+  background-color: #d25b38;
+}
 
-list-style: none;
+.projects-list a{
+  display: block;
+  color: #344a59;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.projects-item-h3{
+  font-weight: bold;
+  color: #344a59;
+  font-size: 13.6px;
+  margin-bottom: 0px;
+  line-height: 18px;
+}
+
+.projects-item-a{
+  padding-top: 10px;
 }
 
 .projects-item{
   display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url("img/projects.jpg");
-  background-repeat: no-repeat;
-  opacity: 0.9;
-
-  width: 330px;
-  height: 160px;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  align-items:center;
 }
 
-.projects-item:nth-child(2n) {
-  margin-right: 0;
+.pro{
+  width: 240px;
+  vertical-align: middle;
+    text-align: right;
 }
 
-.projects-item-a{
-  font-size: 12px;
-  font-weight: bold;
-  color: #fff;
+.about_pro{
+  display:flex;
+}
+
+.project-item-div{
+  background-color: #ffffff;
+  width: 600px;
+  padding-left: 50px;
+  margin-left: 50px;
+  padding-right: 10px;
+}
+
+.neo{
+  padding-top: 30px;
+}
+
+.mor{
+  padding-bottom: 40px;
+}
+
+.trin{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.neoli{
+padding-top: 30px;
+}
+
+.trinli{
+padding-bottom: 39px;
+padding-top: 40px;
+
+}
+
+.morli{
+  padding-bottom: 40px;
 }
 
 .servisec{
@@ -484,8 +533,8 @@ input[type="radio"].visually-hidden {
 
 .projects-button{
   position: absolute;
-  top: 30px;
-  right: 20px;
+  bottom: 20px;
+  right: 40px;
 }
 
 .main-footer{
@@ -705,20 +754,73 @@ h2{
   color: #ffffff;
 }
 .location-all{
+  width: auto;
+  height: auto;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .mail-all, .phone-all, .email-all{
   position: relative;
+  display: inline-block;
+}
+
+.email-all::after{
+  content: "";
+  position: absolute;
+
+  top:3px;
+  left: -35px;
+
+  width: 38px;
+  height: 38px;
+
+  background-image: url("img/mailred.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.phone-all::after{
+  content: "";
+  position: absolute;
+
+  top:-3px;
+  left: -30px;
+
+  width: 38px;
+  height: 38px;
+
+  background-image: url("img/phonered.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .mail-all::after{
   content: "";
   position: absolute;
 
-  left: 10px;
-  width: 10px;
-  height: 3px;
-  background-color: red;
+  top:-5px;
+  left: -40px;
+
+  width: 38px;
+  height: 38px;
+
+  background-image: url("img/icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.one{
+  color: #000000;
+}
+
+.h2_em h2{
+  font-family:bebas_neuebold;
+  font-size: 55px;
+  font-style: normal;
+}
+
+.about_us_txt{
+  font-size: 12px;
+  font-style: normal;
 }
