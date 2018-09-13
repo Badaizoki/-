@@ -9,8 +9,7 @@
 
 body {
   min-width: 1098px;
-  min-height: 1744;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   font-family: "Arial", sans-serif;
@@ -72,8 +71,9 @@ text-decoration: underline;
 }
 
 .site-navigation li a.current{
-  background-color: #344c5b;
-  color: #ffffff;
+  border: 2px solid #db7c60;
+  color: #424345;
+  background-color: rgba(210, 91, 56, 0.1);
 }
 
 .main-header-contacts{
@@ -118,39 +118,60 @@ em{
 .projects-button{
 color: #ffffff;
 text-decoration: underline;
-background-color: #d25b38;
 font-size: 16px;
-border: 1px solid #d25b38;
-border-radius: 20px;
+border: 2px solid #d25b38;
+color: #d25b38;
+
 padding: 5px;
 padding-left: 30px;
 padding-right: 30px;
 }
 
+.news h2{
+  padding-left: 80px;
+  padding-top: 80px;
+  margin-top: 0;
+  padding-right: 30px;
+  color: #000;
+}
+
 .news time{
+position: relative;
+padding-top: 50px;
+display: block;
 color: #d25b38;
-font-size: 14PX;
+font-size: 18PX;
 font-weight: bold;
-font-family:Bebas Neue;
+font-family:bebas_neuebold;
+padding-bottom: 10px;
+text-align: center;
+}
+
+.news time::after{
+content:"";
+position: absolute;
+
+width: 60px;
+height: 60px;
+background-image: url("img/news.png");
+background-repeat: no-repeat;
+background-size: 50px 50px;
+
+top: -15px;
+left: 85px;
+
+
 }
 
 .news-item a{
+  display:block;
   color: #000000;
   font-size: 12px;
   line-height: 14px;
-  text-decoration: underline;
-}
-
-.button-news {
-  color: #ffffff;
-  text-decoration: underline;
-  background-color: #344a59;
-  font-size: 16px;
-  font-weight: bold;
-  border: 1px solid #344a59;
-  border-radius: 20px;
-  padding: 5px 60px;
-  margin-bottom: 10px;
+  padding-left: 35px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  text-align: left;
 }
 
 .servisec{
@@ -159,9 +180,10 @@ font-family:Bebas Neue;
 }
 
 .servisec h2{
-  font-size: 24px;
+  font-size: 55px;
   font-weight: bold;
   color: #d25b38;
+  padding-left: 60px;
 }
 
 .servisec-list a{
@@ -176,11 +198,10 @@ font-family:Bebas Neue;
   bottom: 20px;
   color: #ffffff;
   text-decoration: underline;
-  background-color: #d25b38;
   font-size: 16px;
   font-weight: bold;
-  border: 1px solid #d25b38;
-  border-radius: 20px;
+  border: 2px solid #d25b38;
+
   padding: 5px;
   padding-right: 20px;
   padding-left: 20px;
@@ -203,8 +224,16 @@ a:focus{
   text-decoration: none;
 }
 
+.news{
+  display: flex;
+}
+
 .news-list{
   list-style: none;
+  display: flex;
+  margin-top:50px;
+  margin-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .servisec-list{
@@ -288,6 +317,31 @@ a:focus{
   width: 280px;
 }
 
+.aboutus{
+padding-left: 80px;
+padding-right: 30px;
+margin-bottom: auto;
+padding-bottom: 40px;
+background-color: #f4f2f2;
+}
+
+
+.aboutus h2{
+  font-size: 48px;
+    font-family: bebas_neuebold;
+    color: #d25b38;
+    padding-left: 0px;
+    padding-top: 40px;
+    margin-top: auto;
+}
+
+.about_us_p{
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: auto;
+}
+
 .all{
   display: flex;
   flex-wrap: wrap;
@@ -295,8 +349,8 @@ a:focus{
 }
 
 .news{
-  width: 300px;
-  padding-bottom: 40px;
+  width: auto;
+  background-color: #f4f2f2;
 }
 
 .about_us{
@@ -312,7 +366,8 @@ a:focus{
 
 .projects{
   width: 700px;
-  height: 500px;
+  position: relative;
+
 }
 
 .projects-list{
@@ -341,6 +396,7 @@ a:focus{
 }
 
 .projects-item{
+  position: relative;
   display: flex;
   align-items:center;
 }
@@ -403,13 +459,6 @@ font-weight: bold;
 color: #ffffff;
 font-size: 16px;
 }
-
-  .round {
-    width: 6em;
-    height: 6em;
-    background: orangered;
-    border-radius: 50%;
-    }
 
 .neoli, .trinli, .morli{
   position: relative;
@@ -587,6 +636,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-contacts{
   position: relative;
+  margin-bottom: 4px;
 }
 
 .site-navigation-contacts::after{
@@ -605,22 +655,12 @@ input[type="radio"].visually-hidden {
 }
 
 .news-item{
+  width: 215px;
+  background-color: #fff;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 20px;
   margin-right: 10px;
-}
-
-.news-item::after{
-  content: "";
-
-  position: absolute;
-  left: 1px;
-  top: 6px;
-
-  width: 10px;
-  height: 70%;
-  background-color: #d25b38;
+  padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 .news-list{
@@ -631,9 +671,16 @@ input[type="radio"].visually-hidden {
 }
 
 .button-news{
-  position: absolute;
-  bottom: 1px;
-  left: 30px;
+  padding-left: 80px;
+  display: block;
+  width: 90px;
+  font-family: bebas_neuebold;
+  color: #d25b38;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+
 }
 
 .projects{
@@ -641,9 +688,10 @@ input[type="radio"].visually-hidden {
 }
 
 .projects-button{
+  display: block;
   position: absolute;
-  bottom: 20px;
-  right: 40px;
+  bottom: 5px;
+  right: 23px;
 }
 
 .main-footer{
@@ -726,16 +774,30 @@ background-position: center;
 .newspage{
   width: auto;
   padding-left: 80px;
-  background-image: url("img/services-back.jpg");
+  background-color: #f4f2f2;
 }
 
 .newspage-list{
-  padding-left: 35px;
+  display: block;
+  list-style: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 
 .newspage-list a{
-  font-size: 14px;
-  color: #ffffff;
+  font-size: 16px;
+  color: #000000;
+  width: normal;
+  padding-right: 80px;
+  font-weight: normal;
+  text-decoration: underline;
+ }
+ .newspage h2{
+   font-size: 48px;
+   font-family: bebas_neuebold;
+   color: #d25b38;
+   padding-left: 0px;
+   padding-top: 40px;
  }
 
 .newspage-h2{
@@ -743,125 +805,173 @@ background-position: center;
   padding-top: 30px;
 }
 
+.newspage time{
+  display: block;
+  font-family: bebas_neuebold;
+  font-size: 22px;
+  color: #d25b38;
+  padding-bottom: 5px;
+}
+
+.newspage-item{
+  display: flex;
+  flex-flow: column;
+  padding-bottom: 20px;
+}
+
 .advantage-all{
   margin-bottom: 3px;
 }
 
 .servisec-all{
-  background-image: url("img/services-back.jpg");
+  padding-left: 80px;
+  background-color: #f4f2f2;
 }
 
-.newspage-item{
+.servisec-all h2{
+  font-size: 48px;
+  font-family: bebas_neuebold;
+  color: #d25b38;
+  padding-left: 0px;
+  padding-top: 40px;
+}
+
+.servisec-list-all{
+  list-style: none;
+  padding-left: 0px;
+  display: block;
+  font-size: 16px;
+  color: #000000;
+  font-weight: normal;
+  line-height: 26px;
+  padding-right: 80px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.servisec-list-all a{
+  display: block;
+  font-size: 16px;
+  color: #000000;
+  font-weight: normal;
+  line-height: 26px;
+  padding-right: 80px;
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+.ser-li{
   position: relative;
 }
 
-.newspage-item::after{
-content:"";
-position: absolute;
+.ser-li::after{
+  content: "";
+  position: absolute;
 
-left: -40px;
-top: -5px;
+  left: -20px;
+  top: 12px;
 
-width: 50px;
-height: 50px;
-border-radius: 50%;
-background-color: #ffffff;
-border: 6px solid #784336;
+  width: 8px;
+  height: 1px;
 
-background-image: url("img/news.png");
-background-repeat: no-repeat;
-background-position: center;
+  background-color: #000;
 }
 
 .projectspage{
-  margin-top: 2px;
   width: auto;
   padding-left: 80px;
-  background-image: url("img/services-back.jpg");
-  padding-bottom: 40px;
+  background-color: #f4f2f2;
 }
 
 .projectspage h2{
-  font-size: 30px;
+  font-size: 48px;
+  font-family: bebas_neuebold;
+  color: #d25b38;
+  padding-left: 0px;
+  padding-top: 40px;
+  margin-top: 0px;
 }
 
 .projectsall{
-  padding-left: 35px;
-  display: block;
-}
-
-.projects-item-all{
-background-image: none;
+padding-left: 0px;
+display: block;
+margin-bottom: 0px
 }
 
 .projects-item-all{
   display: block;
-  width: auto;
-  height: auto;
-  position: relative;
-}
-
-.projects-item-all::after{
-content:"";
-position: absolute;
-
-left: -40px;
-top: -5px;
-
-width: 50px;
-height: 50px;
-border-radius: 50%;
-background-color: #ffffff;
-border: 6px solid #784336;
-
-background-image: url("img/projects.png");
-background-repeat: no-repeat;
-background-position: center;
+  list-style: none;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 
 .projectsall time{
-color: #d25b38;
-font-size: 14PX;
+  display: block;
+  font-family: bebas_neuebold;
+  font-size: 22px;
+  color: #d25b38;
+  padding-bottom: 5px;
 }
 
 .projects-item-all{
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: none;
+  display: flex;
+  flex-flow: column;
+  padding-bottom: 20px;
 }
 
 .projects-item-all a{
+  font-size: 16px;
+  color: #000000;
+  width: normal;
+  padding-right: 80px;
+  font-weight: normal;
   text-decoration: underline;
-  font-size: 14px;
   }
 
 h2{
-  font-family:Bebas neue;
+  font-family:bebas_neuebold;
   font-weight: bold;
 }
 
 .contacts-all{
-  text-align: center;
+  text-align: left;
   margin-top: 2px;
   width: auto;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background-image: url("img/services-back.jpg");
+  padding-left: 80px;
+  background-color: #f4f2f2;
   margin-bottom: 2px;
 }
 
 .contacts-all-h2{
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 48px;
+  font-family: bebas_neuebold;
   color: #d25b38;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding-left: 0px;
+  padding-top: 40px;
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.contacts-all h3{
+  font-size: 30px;
+  font-family: bebas_neuebold;
+  color: #d25b38;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  margin-bottom: auto;
+  margin-top: 20px;
+
 }
 
 .contacts-all p{
+  margin-left: 32px;
   font-size: 16px;
-  color: #ffffff;
+  color: #000;
+  font-weight: bold;
 }
+
 .location-all{
   width: auto;
   height: auto;
