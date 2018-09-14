@@ -1048,3 +1048,33 @@ h2{
   border-top: 2px solid #db7c60;
   border-bottom: 2px solid #db7c60;
 }
+
+.license{
+  background-color: #f4f2f2;
+  padding-left: 80px;
+  margin: auto;
+}
+
+.license h2{
+  font-size: 48px;
+    font-family: bebas_neuebold;
+    color: #d25b38;
+    padding-left: 0px;
+    padding-top: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.license ul{
+  padding-left: 0px;
+  display: flex;
+  list-style: none;
+  margin: auto;
+  padding-bottom: 300px;
+}
+
+.license li{
+  display: block;
+  padding-right: 50px;
+  font-size: 14px;
+}
